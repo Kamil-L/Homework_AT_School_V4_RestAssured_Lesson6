@@ -1,0 +1,28 @@
+environment:
+  development:
+    envName: development
+    baseUri: https://api.openweathermap.org/data/2.5
+    basePath: /weather
+    appId: 89a2ed8a594cc497a6273490e7ca59dd
+    cityName: London
+    cityId: 2643743
+    countryAlpha2: GB
+    active: true
+  testing:
+    envName: testing
+    baseUri: https://api.openweathermap.org/data/2.5
+    basePath: /weather
+    appId: 89a2ed8a594cc497a6273490e7ca59dd
+    cityName: Oxford
+    cityId: 2640729
+    countryAlpha2: GB
+    active: false
+  staging:
+    envName: staging
+    baseUri: https://api.openweathermap.org/data/2.5
+    basePath: /weather
+    appId: 89a2ed8a594cc497a6273490e7ca59dd
+    cityName: Gdańsk
+    cityId: 3099434
+    countryAlpha2: PL
+    active: false
