@@ -10,6 +10,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static org.hamcrest.Matchers.is;
+
 public class TestBaseYaml {
 
     static Logger log = LoggerFactory.getLogger(TestBaseYaml.class);
@@ -33,6 +35,7 @@ public class TestBaseYaml {
     public static ResponseSpecification getResponseSpec() {
         return new ResponseSpecBuilder()
                 .build()
-                .statusCode(200);
+                .statusCode(200)
+                .body("name", is(System.getProperty("cityName")));
     }
 }
